@@ -10,29 +10,39 @@ int main()
     int a,b,c; 
     cin >> a >> b >> c; 
 
-    bool even;
-    if(c % 2 == 0){
-      even = true;
-    }else{
-      even = false;
-    }
+    // bool even;
+    // if(c % 2 == 0){
+    //   even = true;
+    // }else{
+    //   even = false;
+    // }
 
-    if(even){
-      if(a==b){
-        cout << "Second" << endl;
-      }else if(a>b){
-        cout << "First" << endl;
-      }else{
-        cout << "Second" << endl;
-      }
-    }else{
-      if(a==b){
-        cout << "First" << endl;
-      }else if(a<b){
-        cout << "Second" << endl;
-      }else{
-        cout << "First" << endl;
-      }
+    // if(even){
+    //   if(a==b){
+    //     cout << "Second" << endl;
+    //   }else if(a>b){
+    //     cout << "First" << endl;
+    //   }else{
+    //     cout << "Second" << endl;
+    //   }
+    // }else{
+    //   if(a==b){
+    //     cout << "First" << endl;
+    //   }else if(a<b){
+    //     cout << "Second" << endl;
+    //   }else{
+    //     cout << "First" << endl;
+    //   }
+    // }
+            
+    if(b>a){
+        cout<<"Second"<<endl;
+    }
+    else if(c%2==0 && a==b){
+        cout<<"Second"<<endl;
+    }
+    else{
+        cout<<"First"<<endl;
     }
      
   }
